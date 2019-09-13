@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/python
 
-choice=$RANDOM
-quotes_length=`cat .quotes.json | jq '. | length'`
-let "choice %= "$quotes_length
-quote=$(cat .quotes.json | jq -r ".["$choice"]")
-echo
-echo "“"$quote"”"
-echo
+from json import load
+from random import choice
+
+quote = choice(load(open('.quotes.json')))
+print('')
+print(quote)
+print('')

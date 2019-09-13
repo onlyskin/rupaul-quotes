@@ -1,7 +1,12 @@
 # About:
-Print a motivational Rupaul quote every time you open a new terminal window!
+
+Print a motivational RuPaul quote every time you open a new terminal window!
+
+# Dependencies:
+OS X System `python` under `/usr/bin/python`
 
 # Installation:
 
-1. Run `sh setup.sh`
-2. Add `source .rupaul_quote` at the start of your `.bashrc` or `.bash_profile`
+1. Clone this repository to your machine
+2. Run `sh setup.sh` from the project root directory
+3. Add `./.rupaul_quote` at the start of your `.bashrc` or `.bash_profile`
